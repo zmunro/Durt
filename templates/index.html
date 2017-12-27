@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Durt</title>
+		<meta charset="utf-8">
+		<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+		<script type="text/JavaScript" src="../static/logindetails.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+
+		<!-- Stylesheets -->
+		<link href="../static/style.css" rel="stylesheet">
+		<link href="../static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		
+	</head>
+
+	<body>
+		<div class="nav-item text-right">
+			<div id="login" onload="checkLoginState()"></div>
+			<fb:login-button autologoutlink="true" onlogout="checkLoginState()" onlogin="checkLoginState()" scope="email, public_profile"></fb:login-button>
+			<!--if they have an account, redirect to manageGarden; if they don't an account, redirect to getStarted-->
+		</div>
+		<div class="tagline-upper text-center text-shadow mt-5 d-none d-lg-block">Durt</div>
+
+		<!-- Navigation -->
+		<nav class="navbar navbar-expand-lg navbar-light bg-faded py-lg-4">
+			<div class="container">
+				<a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">Durt</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarResponsive">
+					<ul class="navbar-nav mx-auto">
+						<li class="nav-item active px-lg-4">
+							<a class="nav-link text-uppercase text-expanded" href="/">Home</a>
+						</li>
+						<li class="nav-item px-lg-4">
+							<a class="nav-link text-uppercase text-expanded" href="/about">About</a>
+						</li>
+						<li class="nav-item px-lg-4">
+							<a id="gardenNav" class="nav-link text-uppercase text-expanded" href="/manageGarden">Manage Garden</a>
+						</li>
+						<li class="nav-item px-lg-4">
+							<a id="gardenNav" class="nav-link text-uppercase text-expanded" href="/resources">Resources</a>
+						</li>
+						<li class="nav-item px-lg-4">
+							<a class="nav-link text-uppercase text-expanded" href="https://www.instagram.com/gitdurty/">Social</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<div class="container">
+			<div class="bg-faded p-4 my-4">
+				<div class="text-center mt-4">
+					<h1 class="my-2">Let's Grow Something!</h1>
+					<h2 class="text-lg my-0"> Durt provides you with a platform that will help you start gardening and grow your own food.<br>You provide us with the name of your plants and your garden location and we do the rest!<br> We'll let you know when to water and harvest your plants based on weather conditions and growing factors.<br> Get started by clicking the Facebook icon in the upper right corner of the page!</h2><br>
+				</div>
+			</div>
+			<div class="bg-faded p-4 my-4">
+				<!-- Image Carousel -->
+				<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+						<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+						<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+						<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+					</ol>
+					<div class="carousel-inner" role="listbox">
+						<div class="carousel-item active">
+							<center><img class="d-block img-fluid h-100" src="../static/imgs/greenhouse.jpg" alt="garden pic"></center>
+						</div>
+						<div class="carousel-item">
+							<center><img class="d-block img-fluid h-100" src="../static/imgs/smileVeg.jpg" alt="garden pic"></center>
+						</div>
+						<div class="carousel-item">
+							<center><img class="d-block img-fluid h-100" src="../static/imgs/bug.jpg" alt="garden pic"></center>
+						</div>
+						<div class="carousel-item">
+							<center><img class="d-block img-fluid h-100" src="../static/imgs/peaflower.jpg" alt="garden pic"></center>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /.container -->
+
+		<!-- JavaScript -->
+		<script src="../static/vendor/jquery/jquery.min.js"></script>
+		<script src="../static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>

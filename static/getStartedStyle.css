@@ -1,0 +1,76 @@
+@media (min-width:320px)  {
+	#map {
+		width: 200px;
+		height: 200px;
+	}
+	#panel, #flip {
+		padding: 10px;
+		text-align: center;
+		background-color: #e5eecc;
+		border: solid 1px #c3c3c3;
+	}
+	#panel {
+		padding: 10px;
+		display: none;
+	}
+
+	#userPlantsHead {
+		padding: 10px;
+		margin-top: 25px;
+		color: green;
+		text-decoration: underline;
+	}
+	.fake-button {
+		display:inline-block;
+		color: white;
+		background:#28a745;
+		cursor:pointer;
+		vertical-align:middle;
+			max-width: 800px;
+			padding-bottom: 7px;
+		padding-top: 10px;
+		padding: 10px;
+	    text-align: center;
+		border-radius: 8px;
+		font-size: 120%;
+	}
+}
+
+@media (min-width:801px)  {
+	#map {
+		width: 500px;
+		height: 500px;
+	}
+	#panel, #flip {
+		padding: 10px;
+		text-align: center;
+		background-color: #e5eecc;
+		border: solid 1px #c3c3c3;
+	}
+	#panel {
+		padding: 10px;
+		display: none;
+	}
+
+	#userPlantsHead {
+		padding: 10px;
+		margin-top: 25px;
+		color: green;
+		text-decoration: underline;
+	}
+	.fake-button {
+		display:inline-block;
+		color: white;
+		background:#28a745;
+		cursor:pointer;
+		vertical-align:middle;
+			max-width: 800px;
+			padding-bottom: 7px;
+		padding-top: 10px;
+		padding: 10px;
+	    text-align: center;
+		border-radius: 8px;
+		font-size: 120%;
+	}
+}
+

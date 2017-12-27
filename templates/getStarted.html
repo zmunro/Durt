@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Durt</title>
+		<meta charset="utf-8">
+		<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+
+		<!-- Stylesheets -->
+		<link href="../static/style.css" rel="stylesheet">
+		<link href="../static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="../static/getStartedStyle.css" rel="stylesheet">
+	</head>
+
+	<body>
+		<div class="nav-item text-right">
+			<div id="login"></div>
+			<fb:login-button autologoutlink="true" onlogout="checkLoginState()" onlogin="checkLoginState()"></fb:login-button>
+		</div>
+		<div class="tagline-upper text-center text-shadow mt-5 d-none d-lg-block">Durt</div>
+
+		<!-- Navigation -->
+		<nav class="navbar navbar-expand-lg navbar-light bg-faded py-lg-4">
+			<div class="container">
+				<a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">Durt</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarResponsive">
+					<ul class="navbar-nav mx-auto">
+						<li class="nav-item px-lg-4">
+							<a class="nav-link text-uppercase text-expanded" href="/">Home</a>
+						</li>
+						<li class="nav-item px-lg-4">
+							<a class="nav-link text-uppercase text-expanded" href="/about">About</a>
+						</li>
+						<li class="nav-item px-lg-4">
+							<a class="nav-link text-uppercase text-expanded" href="/manageGarden">Manage Garden</a>
+						</li>
+						<li class="nav-item px-lg-4">
+							<a id="gardenNav" class="nav-link text-uppercase text-expanded" href="/resources">Resources</a>
+						</li>
+						<li class="nav-item px-lg-4">
+							<a class="nav-link text-uppercase text-expanded" href="https://www.instagram.com/gitdurty/">Social</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<div class="container">
+			<div class="bg-faded p-4 my-4">
+				<div class="row">
+					<div class="col-lg-6">
+					<h2 class="text-lg text-uppercase my-0 text-center">Garden Locator</h2><br>
+						<div onload="initMap()">
+							<div id="map"></div>
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<h2 class="text-lg text-uppercase my-0">What are you planting?</h2>
+						<br>
+						<input id="enterPlant" type="text" name="plant" size="10" />
+						<button id="addPlant">ADD PLANT</button>
+						<div id="tempMessage"></div>
+						<br><br><p>Please make sure your plant is supported by Durt</p>
+						<div id="flip">Supported Plants</div>
+						<div id="panel">
+						</div>
+						<p></p>
+						<h3 id="userPlantsHead">Your Plants</h3>
+						<div id="userPlants"></div>
+						<br><br><center><div class="fake-button" onclick="createUser()" id="gotStarted">Proceed to Manage Garden!</div></center>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /.container -->
+
+		<!-- JavaScript -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script type="text/javascript" src="../static/logindetails.js"></script>
+		<script type="text/javascript" src="../static/getStarted.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmK2muARSuCGRnKpIsuo8uIttRY5Btjfg&callback=initMap" async defer></script>
+		<script src="../static/vendor/jquery/jquery.min.js"></script>
+		<script src="../static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>

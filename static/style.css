@@ -1,0 +1,103 @@
+/*!
+* Start Bootstrap - Business Casual (https://startbootstrap.com/template-overviews/business-casual)
+* Copyright 2013-2017 Start Bootstrap
+* Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-business-casual/blob/master/LICENSE)
+*/
+
+body {
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	background: url('imgs/veggies.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+}
+
+h1, h2, h3, h4, h5, h6, .text-heading {
+	font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+	font-size: 4rem;
+}
+
+.tagline-upper {
+	font-size: 5rem;
+	font-weight: 700;
+	line-height: 1;
+}
+
+.tagline-lower {
+	font-size: 1.2rem;
+	line-height: 1;
+}
+
+.text-expanded {
+	letter-spacing: 2px;
+}
+
+.text-shadow {
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.text-lg {
+	font-size: 1.25rem;
+}
+
+.bg-faded {
+	background-color: rgba(255, 255, 255, 0.9);
+}
+
+input[type=text] {
+    border: 1px solid black;
+}
+
+.bg-overlay {
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+hr.divider {
+	border-color: #292b2c;
+	max-width: 250px;
+}
+
+.map-container iframe {
+	pointer-events: none;
+}
+
+.map-container iframe.clicked {
+	pointer-events: auto;
+}
+
+#panel, #flip {
+	padding: 10px;
+	text-align: center;
+	background-color: #e5eecc;
+	border: solid 1px #c3c3c3;
+}
+
+#panel {
+	padding: 10px;
+	display: none;
+}
+
+#userPlantsHead {
+	padding: 10px;
+	margin-top: 25px;
+	color: green;
+	text-decoration: underline;
+}
+.fake-button {
+	display:inline-block;
+	color: white;
+	background:#28a745;
+	cursor:pointer;
+	vertical-align:middle;
+	max-width: 800px;
+	padding-bottom: 7px;
+	padding-top: 10px;
+	padding: 10px;
+	text-align: center;
+	border-radius: 8px;
+	font-size: 120%;
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Durt</title>
+		<meta charset="utf-8">
+		<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+		<script type="text/JavaScript" src="../static/fblogin.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+
+		<!-- Stylesheets -->
+		<link href="../static/style.css" rel="stylesheet">
+		<link href="../static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	</head>
+
+	<body onload="checkLoginState()">
+		<div class="nav-item text-right">
+			<div id="login"></div>
+			<fb:login-button autologoutlink="true" onlogout="checkLoginState()" onlogin="checkLoginState()"></fb:login-button>
+		</div>
+		<div class="tagline-upper text-center text-shadow mt-5 d-none d-lg-block">Durt</div>
+		
+		<!-- Navigation -->
+		<nav class="navbar navbar-expand-lg navbar-light bg-faded py-lg-4">
+			<div class="container">
+				<a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">Durt</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarResponsive">
+					<ul class="navbar-nav mx-auto">
+						<li class="nav-item px-lg-4">
+							<a class="nav-link text-uppercase text-expanded" href="/">Home</a>
+						</li>
+						<li class="nav-item px-lg-4">
+							<a class="nav-link text-uppercase text-expanded" href="/about">About</a>
+						</li>
+						<li class="nav-item active px-lg-4">
+							<a class="nav-link text-uppercase text-expanded" href="/manageGarden">Manage Garden</a>
+						</li>
+						<li class="nav-item px-lg-4">
+							<a id="gardenNav" class="nav-link text-uppercase text-expanded" href="/resources">Resources</a>
+						</li>
+						<li class="nav-item px-lg-4">
+							<a class="nav-link text-uppercase text-expanded" href="https://www.instagram.com/gitdurty/">Social</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<div class="container">
+			<div class="bg-faded p-4 my-4">
+				<div class="row">
+					<div class="col-lg-6">
+						<div id="welcome"></div>
+						<h2 class="text-lg text-uppercase my-0 text-center">Weather</h2><br>
+						<div id="weather"></div>
+						<div id="weatherIcon"></div>
+					</div>
+					<div class="col-lg-6">
+						<h2 class="text-lg text-uppercase my-0 text-center">Add Another Plant</h2><br>
+						<input id="plants" type="text" name="plants" size="15" /><button id="add">ADD</button>
+					</div>
+				</div>
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Plant Name</th>
+							<th>Date Planted</th>
+							<th>Days Until Harvest</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td><div id="plant1"></div></td>
+							<td><div id="date1"></div></td>
+							<td><div id="DTM1"></div></td>
+						</tr>
+						<tr>
+							<td><div id="plant2"></div></td>
+							<td><div id="date2"></div></td>
+							<td><div id="DTM2"></div></td>
+						</tr>
+						<tr>
+							<td><div id="plant3"></div></td>
+							<td><div id="date3"></div></td>
+							<td><div id="DTM3"></div></td>
+						</tr>
+						<tr>
+							<td><div id="plant4"></div></td>
+							<td><div id="date4"></div></td>
+							<td><div id="DTM4"></div></td>
+						</tr>
+						<tr>
+							<td><div id="plant5"></div></td>
+							<td><div id="date5"></div></td>
+							<td><div id="DTM5"></div></td>
+						</tr>
+						<tr>
+							<td><div id="plant6"></div></td>
+							<td><div id="date6"></div></td>
+							<td><div id="DTM6"></div></td>
+						</tr>
+						<tr>
+							<td><div id="plant7"></div></td>
+							<td><div id="date7"></div></td>
+							<td><div id="DTM7"></div></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+		<!-- /.container -->
+		<!-- JavaScript -->
+		<script type="text/JavaScript" src="../static/vendor/jquery/jquery.min.js"></script>
+		<script type="text/JavaScript" src="../static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+		<script type="text/javascript" src="../static/manageGarden.js"></script>
+	</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Durt</title>
+		<meta charset="utf-8">
+		<script type="text/JavaScript" src="../static/logindetails.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+
+		<!-- Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+
+		<!-- Stylesheets -->
+		<link href="../static/style.css" rel="stylesheet">
+		<link href="../static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	</head>
+
+	<body>
+		<div class="nav-item text-right">
+			<div id="login" onload="checkLoginState()"></div>
+			<fb:login-button autologoutlink="true" onlogout="checkLoginState()" onlogin="checkLoginState()"" scope="email, public_profile"></fb:login-button>
+		</div>
+		<div class="tagline-upper text-center text-shadow mt-5 d-none d-lg-block">Durt</div>
+
+		<!-- Navigation -->
+		<nav class="navbar navbar-expand-lg navbar-light bg-faded py-lg-4">
+			<div class="container">
+				<a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">Durt</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarResponsive">
+					<ul class="navbar-nav mx-auto">
+						<li class="nav-item px-lg-4">
+							<a class="nav-link text-uppercase text-expanded" href="/">Home</a>
+						</li>
+						<li class="nav-item active px-lg-4">
+							<a class="nav-link text-uppercase text-expanded" href="/about">About</a>
+						</li>
+						<li class="nav-item px-lg-4">
+							<a id="gardenNav" class="nav-link text-uppercase text-expanded" href="/manageGarden">Manage Garden</a>
+						</li>
+						<li class="nav-item px-lg-4">
+							<a id="gardenNav" class="nav-link text-uppercase text-expanded" href="/resources">Resources</a>
+						</li>
+						<li class="nav-item px-lg-4">
+							<a class="nav-link text-uppercase text-expanded" href="https://www.instagram.com/gitdurty/">Social</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<div class="container">
+			<div class="bg-faded p-4 my-4">
+				<div class="row">
+					<div class="col-lg-6">
+						<img class="img-fluid mb-4 mb-lg-0" src="../static/imgs/tomato.png" alt="tomato">
+					</div>
+					<div class="col-lg-6">
+						<h2 class="text-lg text-uppercase my-0">About Durt</h2>
+						<br><p>It can be hard to grow and manage your garden if you don't know much about plants.</p>
+						<p>We provide you with information pertaining to the plants you grow (information about the plant, when to water, when to harvest, etc.) and the weather conditions in your area.</p>
+						<p>Get out there and grow something!</p>
+						<p>Created by COMP 20 Fall 2017 Team 10</p>
+						<a href="mailto:durt69420blazeit@gmail.com" class="btn btn-success">Get in Touch</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- /.container -->
+
+		<!-- JavaScript -->
+		<script src="../static/vendor/jquery/jquery.min.js"></script>
+		<script src="../static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>
