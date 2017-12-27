@@ -1,5 +1,0 @@
-{ "id": 0001, "plantName" : "Peas", "DTM": 60, "waterPerWeek": 1, "link": "http://www.burpee.com/vegetables/peas/pea-easy-peasy-prod002731.html", "sun": 100 }
-{ "id": 0002, "plantName" : "Carrots", "DTM": 68, "waterPerWeek": 2, "link": "http://www.burpee.com/vegetables/carrots/carrot-sugarsnax-hybrid-prod000640.html", "sun": 100}
-{ "id": 0003, "plantName" : "Tomato", "DTM": 49, "waterPerWeek": 2, "link": "http://www.burpee.com/vegetables/tomatoes/tomato-fourth-of-july-hybrid-prod000988.html", "sun": 100}
-{ "id": 0004, "plantName" : "Basil", "DTM": 75, "waterPerWeek": 2, "link":"http://www.burpee.com/herbs/basil/basil-sweet-prod000460.html", "sun": 100}
-{ "id": 0005, "plantName" : "Kale", "DTM": 55, "waterPerWeek": 2, "link": "http://www.burpee.com/vegetables/kale/kale-prizm-hybrid-prod099981.html", "sun": 100}
