@@ -1,6 +1,7 @@
 # comp20-f2017-team10
 
 Website URL: https://durt2.herokuapp.com/
+
 Works best in Chrome, known issues exist in Safari and Firefox.
 
 Commit history located in private repo since database credentials were included in server code. Credentials have been taken out in current code. In future, credentials would be stored in config file that is absent from the repository. 
