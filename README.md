@@ -1,5 +1,7 @@
 # comp20-f2017-team10
 
+Commit history located in private repo since database credentials were included in server code. Credentials have been taken out in current code. In future, credentials would be stored in config file that is absent from the repository. 
+
 ### Project title
 	Durt
 
