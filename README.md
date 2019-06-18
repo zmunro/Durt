@@ -12,7 +12,7 @@ Credentials have been taken out in current code. In future, credentials would be
 	Durt
 
 ### Problem statement
-	It can be hard to grow and manage your garden if you don't know much about plants.
+	It can be hard to grow and manage your garden if you don't know much about plants :(
 
 ### Solving the problem
 	We provide you with information pertaining to the plants you grow (information about the plant, when 
