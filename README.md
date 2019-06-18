@@ -16,4 +16,4 @@ Credentials have been taken out in current code. In future, credentials would be
 
 ### Solving the problem
 	We provide you with information pertaining to the plants you grow (information about the plant, when 
-	to water, when to harvest, etc.) and the weather conditions in your area.
+	to water, when to harvest, etc.) and the weather conditions in your area!
